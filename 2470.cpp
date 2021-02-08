@@ -12,7 +12,7 @@ vector<int> Blend() {
 	int L = 0, R = v.size() - 1;
 	int min_val = 0x7FFFFFFF;   //int 최대값
 
-	while (L < R) { //이분탐색
+	while (L < R) {
 		int tmp = v[L] + v[R];
 		if (abs(tmp) < abs(min_val)) {
 			ans[0] = v[L]; ans[1] = v[R];
