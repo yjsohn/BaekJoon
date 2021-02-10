@@ -10,7 +10,7 @@ vector<int> loc;
 int InstallRouter() {
 	//기준을 공유기간 간격으로
 
-	int left = 1, right = loc[N - 1], mid, ans;
+	int left = 1, right = loc[N - 1] - loc[0], mid, ans;
 	while (left <= right) {
 		mid = (left + right) / 2;
 		int cnt = 1;
