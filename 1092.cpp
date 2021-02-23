@@ -50,7 +50,7 @@ int main() {
 		box_num += order[i];
 		blank = minutes * crane_num - box_num;
 		if (blank < 0) {	//부족할 경우 minutes 다시 계산
-			//idea: 박스를 각 크레인에 공평하게 나눠준뒤 박스가 남는다면 minutes++
+			//idea: 박스를 각 크레인에 공평하게 나눠준 뒤 박스가 남는다면 minutes++
 			int tmp =  box_num / crane_num;
 			if (box_num % crane_num)
 				tmp++;
