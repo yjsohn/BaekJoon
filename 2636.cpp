@@ -80,6 +80,5 @@ int main() {
 			break;
 		ans++;
 	}
-	cout << ans << "\n";
-	cout << cheese_cnt << "\n";
+	cout << ans << "\n" << cheese_cnt << "\n";
 }
