@@ -9,9 +9,9 @@ int dy[] = {0, 0, 1, -1};
 int dx[] = {1, -1, 0, 0};
 
 void dfs(int y, int x, int day){
-    /*if(dp[y][x] >= day)
+    if(dp[y][x] >= day)
         return;
-    dp[y][x] = day;*/
+    dp[y][x] = day;
     for(int i = 0; i < 4; i++){
         int ny = y + dy[i];
         int nx = x + dx[i];
@@ -21,7 +21,6 @@ void dfs(int y, int x, int day){
             continue;
         if(dp[ny][nx] >= day + 1)
             continue;
-        dp[ny][nx] = day + 1;
         dfs(ny, nx, day + 1);
     }
 }
